@@ -133,10 +133,6 @@
     font-size: 16px;
 }
 
-.about .ceo-banner br{
-  background-color: purple;
-}
-
 .about svg {
     height: 25px;
     width: 40px;
@@ -178,4 +174,17 @@
     height: 3px;
     background-color: #29ff29;
     /* opacity: 0; */
+}
+
+.other-page-bttn {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    opacity: 0.1;
+    cursor: pointer;
 }
