@@ -50,7 +50,16 @@
   top: 200px;
   text-align: center;
   width: 100%;
+  animation-name: shift;
+  animation-duration: .8s;
+  animation-delay: .2s;
+  -webkit-animation-timing-function: ease;
   /*border: 1px solid yellow;*/
+}
+
+@keyframes shift {
+    from  {top: 500px; opacity: 0;}
+    to {top: 200px; opacity: 1;}
 }
 
 .header-text p {
