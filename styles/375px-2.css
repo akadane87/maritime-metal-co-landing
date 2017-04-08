@@ -50,12 +50,21 @@
   top: 200px;
   text-align: center;
   width: 100%;
+  animation-name: shift;
+  animation-duration: .8s;
+  animation-delay: .2s;
+  -webkit-animation-timing-function: ease;
   /*border: 1px solid yellow;*/
+}
+
+@keyframes shift {
+    from  {top: 500px; opacity: 0;}
+    to {top: 200px; opacity: 1;}
 }
 
 .header-text p {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 12px;
     color: white;
 }
@@ -85,7 +94,7 @@
 
 .contact {
     position: absolute;
-    top: 560px;
+    top: 540px;
     /* border: 1px solid white; */
 }
 
@@ -95,11 +104,11 @@
 }
 
 .contact p {
-  margin: 0 0 5px 10px;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
-  font-size: 12px;
+    margin: 0 0 5px 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
 }
 
 .about {
@@ -122,10 +131,11 @@
     /* left: -16px; */
     padding-left: 17px;
     padding-top: 6px;
+    padding-bottom: 5px;
     z-index: 2;
     font-size: 21px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 30px;
 }
 
@@ -134,7 +144,7 @@
     line-height: 12px;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .about svg {
@@ -152,9 +162,9 @@
     position: relative;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 300;
-    line-height: 35px;
+    line-height: 40px;
     margin: 15px 0 45px 20px;
 }
 
@@ -174,9 +184,9 @@
 .about p {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 14px;
-    line-height: 22px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
     width: 90%;
     height: 380px;
     overflow-y: scroll;
